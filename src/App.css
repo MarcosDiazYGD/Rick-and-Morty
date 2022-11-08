@@ -1,0 +1,179 @@
+/* === IMPORTS === */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === HEADER === */
+.Header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container--img__header {
+  height: 150px;
+}
+
+.img__header {
+  width: 100%;
+}
+
+.card-div-img {
+  width: 100%;
+}
+
+.card-div-img img {
+  width: 100%;
+}
+
+/* === lOCATION === */
+.Location {
+  padding: 2rem 4rem;
+}
+
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+.lbl--searchInput h3 {
+  font-family: "Shadows Into Light", cursive;
+  text-shadow: 0 0 30px red;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.container--searchBar {
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  text-shadow: 0 0 15px white;
+  font-family: "Permanent Marker", cursive;
+  color: black;
+}
+
+.search-button {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Indie Flower", cursive;
+  text-shadow: 0 0 15px blue;
+  border: none;
+}
+
+.search-button,
+.search-input {
+  font-size: 18px;
+  color: white;
+  transition: all 1s;
+  padding: 0.5rem;
+  border: transparent;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.267);
+}
+
+.search-input:focus ~ .search-button {
+  background-color: #fff;
+  outline: 0;
+}
+
+.title-location {
+  margin: 1rem 0;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  text-shadow: 0 0 20px white;
+}
+
+.description-location {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}
+
+.description-location span {
+  color: rgba(255, 255, 255, 0.658);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.description-location p {
+  color: white;
+  font-size: 15px;
+}
+
+.h2--no__poblation {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 20px red;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Indie Flower", cursive;
+}
+
+/* === RESIDENTS === */
+.container--cards-residents {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  row-gap: 5rem;
+}
+
+.card-resident {
+  border: 1px solid black;
+  box-shadow: 0 0 15px white;
+  background-color: #24303c;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-div-img {
+  padding: 0.5rem;
+}
+
+.card-div-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+.card-div-description span {
+  color: rgba(255, 255, 255, 0.658);
+}
+
+@media screen and (min-width: 700px) {
+  .Location {
+    padding: 2rem 10rem;
+  }
+
+  .container--cards-residents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+  }
+}
