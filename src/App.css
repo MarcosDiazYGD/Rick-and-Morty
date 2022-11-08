@@ -165,9 +165,31 @@ font-family: 'Shadows Into Light', cursive;
   color: rgba(255, 255, 255, 0.658);
 }
 
+.point--info-alive {
+  width: 4px;
+  height: 4px;
+  color: green;
+}
+
+.point--info-dead {
+  width: 4px;
+  height: 4px;
+  color: red;
+}
+
+.point--info-unknown {
+  width: 4px;
+  height: 4px;
+  color: white;
+}
+
 @media screen and (min-width: 700px) {
   .Location {
     padding: 2rem 10rem;
+  }
+
+  .container--img__header {
+    height: 400px;
   }
 
   .container--cards-residents {

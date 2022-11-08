@@ -9,6 +9,7 @@ const ResidentInfo = ({ resident }) => {
     console.log(residentData);
   }, []);
 
+
   console.log(residentData);
   return (
     <div className="card-resident">
@@ -23,7 +24,6 @@ const ResidentInfo = ({ resident }) => {
         <p>
           <span>Status</span> <br />
           {residentData.status}
-
         </p>
         <p>
           <span>Origin</span> <br />
